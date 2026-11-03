@@ -1,6 +1,6 @@
 # Vesper UEFI DXE Bootkit
 
-Detection rates for this bootkit are currently exceptionally low across anti-cheat systems such as EAC, BE, ACE, and VGK.
+Detection rates for this bootkit are currently exceptionally low across anti-cheat systems such as EAC, VGK, FACEIT.
 
 However, please keep in mind that this is a publicly available source, meaning it can be detected or flagged at any time. Detection rates are never guaranteed.
 
