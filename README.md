@@ -10,4 +10,4 @@ Detection rates for this bootkit are currently exceptionally low across anti-che
 
 However, please keep in mind that this is a publicly available source, meaning it can be detected or flagged at any time. Detection rates are never guaranteed.
 
-Join our community https://discord.gg/sourcesheaven for more. 
+Developed for https://scuba.fan
