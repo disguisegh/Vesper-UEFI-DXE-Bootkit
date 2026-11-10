@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dxe">
+      <UniqueIdentifier>{9F3C18A4-2E70-4B11-8D6A-5C14E8B07291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxe\core">
+      <UniqueIdentifier>{A11C0E01-2B3D-4E5F-8A90-1C2D3E4F5A60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxe\mem">
+      <UniqueIdentifier>{B22D1F12-3C4E-5F60-9B01-2D3E4F5A6B71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxe\fw">
+      <UniqueIdentifier>{C33E2A23-4D5F-6071-AC12-3E4F5A6B7C82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxe\inc">
+      <UniqueIdentifier>{D44F3B34-5E60-7182-BD23-4F5A6B7C8D93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{B2C91E04-7A18-4D55-9E30-1F6A8C24D901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\types">
+      <UniqueIdentifier>{E55A4C45-6F71-8293-CE34-5A6B7C8D9EA4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext">
+      <UniqueIdentifier>{C3D02F15-8B29-4E66-A041-2A7B9D35E012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\pe">
+      <UniqueIdentifier>{F66B5D56-7082-93A4-DF45-6B7C8D9E0FB5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dxe\core\boot.c">
+      <Filter>dxe\core</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\core\ebs.c">
+      <Filter>dxe\core</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\core\va.c">
+      <Filter>dxe\core</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\core\req.c">
+      <Filter>dxe\core</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\mem\rw.c">
+      <Filter>dxe\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\mem\walk.c">
+      <Filter>dxe\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\mem\proc.c">
+      <Filter>dxe\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\mem\mod.c">
+      <Filter>dxe\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\fw\persist.c">
+      <Filter>dxe\fw</Filter>
+    </ClCompile>
+    <ClCompile Include="dxe\fw\fvscan.c">
+      <Filter>dxe\fw</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dxe\inc\ctx.h">
+      <Filter>dxe\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\types\rva.h">
+      <Filter>deps\types</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\types\winload.h">
+      <Filter>deps\types</Filter>
+    </ClInclude>
+    <ClInclude Include="deps\types\packet.h">
+      <Filter>deps\types</Filter>
+    </ClInclude>
+    <ClInclude Include="ext\pe\pe.h">
+      <Filter>ext\pe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dxe\rtk.inf">
+      <Filter>dxe</Filter>
+    </None>
+  </ItemGroup>
+</Project>

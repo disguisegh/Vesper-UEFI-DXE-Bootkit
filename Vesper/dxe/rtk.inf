@@ -1,0 +1,42 @@
+[Defines]
+  INF_VERSION    = 0x0001001B
+  BASE_NAME      = ShDxe
+  FILE_GUID      = 9F3C18A4-2E70-4B11-8D6A-5C14E8B07291
+  MODULE_TYPE    = DXE_RUNTIME_DRIVER
+  VERSION_STRING = 0.2
+  ENTRY_POINT    = DxeMain
+
+[Sources]
+  core/boot.c
+  core/ebs.c
+  core/va.c
+  core/req.c
+  mem/rw.c
+  mem/walk.c
+  mem/proc.c
+  mem/mod.c
+  fw/persist.c
+  fw/fvscan.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiDriverEntryPoint
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  UefiRuntimeLib
+  PcdLib
+  BaseMemoryLib
+  MemoryAllocationLib
+
+[Guids]
+  gEfiEventVirtualAddressChangeGuid
+
+[Depex]
+  gEfiCpuArchProtocolGuid
+
+[BuildOptions]
+  MSFT:*_*_*_CC_FLAGS = /I$(MODULE_DIR)/inc /I$(MODULE_DIR)/../deps/types /I$(MODULE_DIR)/../ext/pe /WX-
+  MSFT:*_*_*_DLINK_FLAGS = /SUBSYSTEM:EFI_RUNTIME_DRIVER
